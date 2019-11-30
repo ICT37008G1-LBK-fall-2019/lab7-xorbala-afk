@@ -1,28 +1,35 @@
 {
-  "name": "js-api-test",
+  "name": "xorb",
   "version": "1.0.0",
-  "description": "",
+  "description": "xorb",
   "main": "index.js",
   "scripts": {
-    "build": "browserify --entry index.js --outfile bundle.js",
-    "buildbabel": "browserify --entry index.js -o bundle.js -t [ babelify --presets [ @babel/preset-env] ]",
-    "buildw": "watchify index.js -o bundle.js -v",
-    "buildwbabel": "watchify --entry index.js -o bundle.js -t [ babelify --presets [ @babel/preset-env] ] -v"
+    "build": "browserify --entry index.js -o bundle.js -t [ babelify --presets [ @babel/preset-env] ]",
+    "build2": "browserify --entry index.js --outfile bundle.js",
+    "build1": "watchify --entry index.js -o bundle.js -t [ babelify --presets [ @babel/preset-env] ] -v"
   },
   "repository": {
     "type": "git",
-    "url": "js-api-test"
+    "url": "git+https://github.com/ICT37008G1-LBK-fall-2019/lab7-xorbala-afk.git"
   },
-  "author": "gdznela",
+  "keywords": [
+    "xorb"
+  ],
+  "author": "xorbala",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ICT37008G1-LBK-fall-2019/lab7-xorbala-afk/issues"
+  },
+  "homepage": "https://github.com/ICT37008G1-LBK-fall-2019/lab7-xorbala-afk#readme",
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.19.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.0",
-    "@babel/preset-env": "^7.2.0",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
     "babelify": "^10.0.0",
-    "browserify": "^16.2.3",
-    "watchify": "^3.11.0"
+    "browserify": "^16.5.0",
+    "jquery": "^3.4.1",
+    "watchify": "^3.11.1"
   }
 }
